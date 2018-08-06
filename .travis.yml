@@ -7,5 +7,5 @@ matrix:
   fast_finish: true
 install:
   - composer install
-script: php vendor/phpunit/phpunit/phpunit --no-configuration tests/
+script: ./vendor/phpunit/phpunit/phpunit tests
 
