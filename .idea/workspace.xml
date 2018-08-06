@@ -67,7 +67,7 @@
           <entry key="gitignore" value="3" />
           <entry key="json" value="1" />
           <entry key="php" value="19" />
-          <entry key="yml" value="2" />
+          <entry key="yml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -75,7 +75,7 @@
           <entry key="JSON" value="1" />
           <entry key="PHP" value="19" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="YAML" value="2" />
+          <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -85,7 +85,7 @@
           <entry key="gitignore" value="64" />
           <entry key="json" value="209" />
           <entry key="php" value="5883" />
-          <entry key="yml" value="40" />
+          <entry key="yml" value="189" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -93,7 +93,7 @@
           <entry key="JSON" value="209" />
           <entry key="PHP" value="5883" />
           <entry key="PLAIN_TEXT" value="122" />
-          <entry key="YAML" value="40" />
+          <entry key="YAML" value="189" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -108,11 +108,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/givepay/FlatRatePay/FlatRatePayClient.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="146" selection-start-line="146" selection-end-line="146" />
+            <state relative-caret-position="302">
+              <caret line="332" column="6" lean-forward="true" selection-start-line="332" selection-start-column="6" selection-end-line="332" selection-end-column="6" />
               <folding>
                 <element signature="e#39#56#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="68" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -126,11 +135,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/sale_tests.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="64" column="167" selection-start-line="64" selection-start-column="167" selection-end-line="64" selection-end-column="167" />
+            <state relative-caret-position="-17">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="e#95#137#0#PHP" expanded="true" />
               </folding>
@@ -227,6 +236,7 @@
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/givepay/FlatRatePay/FlatRatePayClient.php" />
         <option value="$PROJECT_DIR$/tests/sale_tests.php" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -414,17 +424,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533562656705</updated>
-      <workItem from="1533562658008" duration="8574000" />
+      <workItem from="1533562658008" duration="9577000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SaleTest_testCanMakeSale - 2018.08.06 at 10h 50m 10s.xml">
-      <configuration name="SaleTest.testCanMakeSale" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="SaleTest_testCanMakeSale - 2018.08.06 at 10h 50m 35s.xml">
-      <configuration name="SaleTest.testCanMakeSale" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="SaleTest_testCanMakeSale - 2018.08.06 at 10h 53m 35s.xml">
       <configuration name="SaleTest.testCanMakeSale" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
@@ -449,9 +453,15 @@
     <history-entry file="SaleTest_testCanMakeSale - 2018.08.06 at 10h 59m 43s.xml">
       <configuration name="SaleTest.testCanMakeSale" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="SaleTest_testCanMakeSale - 2018.08.06 at 11h 00m 41s.xml">
+      <configuration name="SaleTest.testCanMakeSale" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="SaleTest_testCanMakeSale - 2018.08.06 at 11h 01m 07s.xml">
+      <configuration name="SaleTest.testCanMakeSale" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8574000" />
+    <option name="totallyTimeSpent" value="9577000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -486,22 +496,6 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/tests/sale_tests.php</url>
-          <line>72</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/givepay/FlatRatePay/FlatRatePayClient.php</url>
-          <line>146</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/transactions/transaction-sale.php">
@@ -616,13 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/givepay/FlatRatePay/TransactionResult.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/TestCase.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
@@ -630,23 +617,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/sale_tests.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#95#137#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/givepay/FlatRatePay/TransactionResult.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="50" column="1" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/givepay/FlatRatePay/FlatRatePayClient.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="146" selection-start-line="146" selection-end-line="146" />
+        <state relative-caret-position="302">
+          <caret line="332" column="6" lean-forward="true" selection-start-line="332" selection-start-column="6" selection-end-line="332" selection-end-column="6" />
           <folding>
             <element signature="e#39#56#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/sale_tests.php">
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="64" column="167" selection-start-line="64" selection-start-column="167" selection-end-line="64" selection-end-column="167" />
-          <folding>
-            <element signature="e#95#137#0#PHP" expanded="true" />
-          </folding>
+          <caret line="12" column="68" selection-start-line="12" selection-start-column="68" selection-end-line="12" selection-end-column="68" />
         </state>
       </provider>
     </entry>
