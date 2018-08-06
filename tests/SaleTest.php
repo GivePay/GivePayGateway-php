@@ -62,6 +62,11 @@ final class SaleTest extends \PHPUnit\Framework\TestCase {
      * @dataProvider envVarCredsProvider
      */
     public function testCanMakeSale($mid, $tid, $client_id, $client_secret) {
+        if (null == $mid) {
+            $this->markTestSkipped('no creds found. Skipping test...');
+            return;
+        }
+
         $client = new FlatRatePayClient($client_id, $client_secret, "https://portal.flatratepay-staging.net/connect/token", "https://gpg-stage.flatratepay-staging.net/");
         $sale = new Sale(10, TerminalType::$ECommerce,
             new Address("", "", "", "", "76132"
