@@ -3,7 +3,7 @@
   "license": "GPL-3.0-or-later",
   "autoload": {
     "psr-4": {
-      "GivePay\\Gateway\\": "Givepay/Gateway/"
+      "GivePay\\Gateway\\": "GivePay/Gateway/"
     }
   },
   "require-dev": {

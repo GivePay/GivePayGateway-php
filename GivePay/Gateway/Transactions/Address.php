@@ -8,7 +8,7 @@
 
 namespace GivePay\Gateway\Transactions;
 
-class Address {
+final class Address {
     /**
      * @var string Billing address line 1
      */

@@ -8,7 +8,7 @@
 
 namespace GivePay\Gateway\Transactions;
 
-class Sale {
+final class Sale {
     /**
      * @var int The total amount of the transactions
      */

@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14ae19a8-3157-4bbf-be6d-d31f817b61f1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GivePay/Gateway/Transactions/Address.php" beforeDir="false" afterPath="$PROJECT_DIR$/GivePay/Gateway/Transactions/Address.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/AddressTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AddressTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/CardTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CardTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/SaleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/SaleTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GivePay/Gateway/Transactions/Sale.php" beforeDir="false" afterPath="$PROJECT_DIR$/GivePay/Gateway/Transactions/Sale.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,22 +36,22 @@
           <entry key="LICENSE" value="1" />
           <entry key="env" value="1" />
           <entry key="gitignore" value="3" />
-          <entry key="json" value="3" />
+          <entry key="json" value="4" />
           <entry key="lock" value="1" />
           <entry key="md" value="2" />
           <entry key="php" value="30" />
           <entry key="xml" value="2" />
-          <entry key="yml" value="5" />
+          <entry key="yml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="4" />
+          <entry key="JSON" value="5" />
           <entry key="Markdown" value="2" />
           <entry key="PHP" value="30" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="XML" value="2" />
-          <entry key="YAML" value="5" />
+          <entry key="YAML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -58,19 +59,19 @@
           <entry key="dummy" value="57" />
           <entry key="env" value="35" />
           <entry key="gitignore" value="64" />
-          <entry key="json" value="270" />
+          <entry key="json" value="271" />
           <entry key="md" value="154" />
-          <entry key="php" value="6075" />
-          <entry key="yml" value="211" />
+          <entry key="php" value="6088" />
+          <entry key="yml" value="217" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="270" />
+          <entry key="JSON" value="271" />
           <entry key="Markdown" value="154" />
-          <entry key="PHP" value="6075" />
+          <entry key="PHP" value="6088" />
           <entry key="PLAIN_TEXT" value="156" />
-          <entry key="YAML" value="211" />
+          <entry key="YAML" value="217" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -103,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GivePay/Gateway/Transactions/Address.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+            <state relative-caret-position="357">
+              <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
               <folding>
                 <element signature="e#6#93#0#PHP" expanded="true" />
               </folding>
@@ -116,19 +117,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GivePay/Gateway/Transactions/Card.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GivePay/Gateway/Transactions/Sale.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+            <state relative-caret-position="85">
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -145,8 +137,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GivePay/Gateway/TransactionResult.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="25" />
+            <state relative-caret-position="357">
+              <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -154,12 +146,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/AddressTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+            <state relative-caret-position="493">
+              <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
               <folding>
                 <element signature="e#6#94#0#PHP" expanded="true" />
                 <element signature="e#96#128#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -180,8 +181,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/SaleTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+            <state relative-caret-position="221">
+              <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+              <folding>
+                <element signature="e#95#134#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -220,24 +224,24 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/givepay/FlatRatePay/frp-gateway.php" />
         <option value="$PROJECT_DIR$/givepay/FlatRatePay/TransactionResult.php" />
-        <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/givepay/FlatRatePay/FlatRatePayClient.php" />
         <option value="$PROJECT_DIR$/tests/sale_tests.php" />
         <option value="$PROJECT_DIR$/phpunit.xml" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/LICENSE" />
-        <option value="$PROJECT_DIR$/GivePay/Gateway/TransactionResult.php" />
         <option value="$PROJECT_DIR$/GivePay/Gateway/FlatRatePayClient.php" />
         <option value="$PROJECT_DIR$/GivePay/Gateway/GivePayGatewayClient.php" />
         <option value="$PROJECT_DIR$/GivePay/Gateway/Transactions/TerminalType.php" />
-        <option value="$PROJECT_DIR$/GivePay/Gateway/Transactions/Sale.php" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/tests/AddressTest.php" />
         <option value="$PROJECT_DIR$/tests/CardTest.php" />
         <option value="$PROJECT_DIR$/tests/SaleTest.php" />
         <option value="$PROJECT_DIR$/GivePay/Gateway/Transactions/Card.php" />
+        <option value="$PROJECT_DIR$/GivePay/Gateway/TransactionResult.php" />
+        <option value="$PROJECT_DIR$/GivePay/Gateway/Transactions/Sale.php" />
         <option value="$PROJECT_DIR$/GivePay/Gateway/Transactions/Address.php" />
+        <option value="$PROJECT_DIR$/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/composer.json" />
       </list>
     </option>
   </component>
@@ -373,7 +377,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.AddressTest">
+  <component name="RunManager" selected="PHPUnit.Run All Tests">
     <configuration name="AddressTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="AddressTest" file="$PROJECT_DIR$/tests/AddressTest.php" scope="Class" />
       <method v="2" />
@@ -426,14 +430,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533562656705</updated>
-      <workItem from="1533562658008" duration="14008000" />
+      <workItem from="1533562658008" duration="14416000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SaleTest_testCanMakeSale - 2018.08.06 at 10h 57m 11s.xml">
-      <configuration name="SaleTest.testCanMakeSale" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="SaleTest_testCanMakeSale - 2018.08.06 at 10h 57m 43s.xml">
       <configuration name="SaleTest.testCanMakeSale" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
@@ -461,9 +462,12 @@
     <history-entry file="AddressTest - 2018.08.06 at 13h 44m 34s.xml">
       <configuration name="AddressTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="Run_All_Tests - 2018.08.06 at 13h 49m 34s.xml">
+      <configuration name="Run All Tests" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14008000" />
+    <option name="totallyTimeSpent" value="14416000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -543,13 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
@@ -593,24 +590,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GivePay/Gateway/TransactionResult.php">
+    <entry file="file://$PROJECT_DIR$/GivePay/Gateway/Transactions/Card.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="25" />
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GivePay/Gateway/Transactions/TerminalType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -624,28 +614,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GivePay/Gateway/Transactions/Sale.php">
+    <entry file="file://$PROJECT_DIR$/GivePay/Gateway/TransactionResult.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GivePay/Gateway/Transactions/TerminalType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" column="38" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/AddressTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-          <folding>
-            <element signature="e#6#94#0#PHP" expanded="true" />
-            <element signature="e#96#128#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="357">
+          <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -662,25 +634,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/SaleTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        <state relative-caret-position="221">
+          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding>
+            <element signature="e#95#134#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GivePay/Gateway/Transactions/Card.php">
+    <entry file="file://$PROJECT_DIR$/GivePay/Gateway/Transactions/Sale.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        <state relative-caret-position="85">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/GivePay/Gateway/Transactions/Address.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        <state relative-caret-position="357">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
           <folding>
             <element signature="e#6#93#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/AddressTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+          <folding>
+            <element signature="e#6#94#0#PHP" expanded="true" />
+            <element signature="e#96#128#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
         </state>
       </provider>
     </entry>

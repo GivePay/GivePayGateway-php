@@ -1,7 +1,7 @@
 version: '2'
 services:
   test:
-    image: phpunit/phpunit
+    image: phpunit/phpunit:6.0.6
     volumes:
       - "./:/app"
     env_file:
