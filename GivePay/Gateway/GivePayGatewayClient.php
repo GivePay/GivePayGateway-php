@@ -4,7 +4,9 @@ namespace GivePay\Gateway;
 
 use cURL\Request;
 use \Exception;
+use GivePay\Gateway\Transactions\Card;
 use GivePay\Gateway\Transactions\TerminalType;
+use GivePay\Gateway\Transactions\TokenRequest;
 use GivePay\Gateway\Transactions\V0id;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
@@ -55,7 +57,7 @@ final class GivePayGatewayClient {
 	 * @param string $terminal_id The terminal ID for the website
 	 * @param Transactions\Sale $sale The transaction information
 	 *
-	 * @throws \Exception
+	 * @throws Exception
 	 * @return TransactionResult
 	 */
 	public function chargeAmount( $merchant_id, $terminal_id, $sale ) {
@@ -97,7 +99,7 @@ final class GivePayGatewayClient {
 	 *
 	 * @param string $merchant_id
 	 * @param string $terminal_id
-	 * @param array $card
+	 * @param Card $card
 	 *
 	 * @return string
 	 * @throws Exception
@@ -226,9 +228,9 @@ final class GivePayGatewayClient {
 	 * @return string
 	 */
 	private function makeStoreCardRequest( $access_token, $merchant_id, $terminal_id, $card ) {
-		$token_request = $this->generateTokenizationRequest( $merchant_id, $terminal_id, $card );
-
-		$body = json_encode( $token_request );
+		$token_request = new TokenRequest($card, TerminalType::$ECommerce);
+        $token_request_string = $token_request->serialize($merchant_id, $terminal_id);
+		$body = json_encode( $token_request_string );
 
         $this->logger->info( "Starting request for tokenization" );
 
