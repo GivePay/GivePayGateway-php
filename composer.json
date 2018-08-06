@@ -11,8 +11,7 @@
   "require": {
       "psr/log": "^1.0",
       "stil/curl-easy": "^1.2",
-      "ext-json": "*",
-      "ext-curl": "*"
+      "ext-json": "*"
     },
   "description": "A library for interacting with FlatRatePay"
 }
