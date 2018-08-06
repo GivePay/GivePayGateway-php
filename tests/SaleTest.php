@@ -6,11 +6,11 @@
  * Time: 9:34 AM
  */
 
-use GivePay\Gateway\Transactions\Sale;
-use GivePay\Gateway\Transactions\Address;
-use GivePay\Gateway\Transactions\Card;
-use GivePay\Gateway\Transactions\TerminalType;
-use GivePay\Gateway\GivePayGatewayClient;
+use \GivePay\Gateway\Transactions\Sale;
+use \GivePay\Gateway\Transactions\Address;
+use \GivePay\Gateway\Transactions\Card;
+use \GivePay\Gateway\Transactions\TerminalType;
+use \GivePay\Gateway\GivePayGatewayClient;
 
 final class SaleTest extends \PHPUnit\Framework\TestCase {
 
