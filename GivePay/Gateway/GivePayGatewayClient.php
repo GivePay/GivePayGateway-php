@@ -4,6 +4,8 @@ namespace GivePay\Gateway;
 
 use cURL\Request;
 use \Exception;
+use GivePay\Gateway\Transactions\TerminalType;
+use GivePay\Gateway\Transactions\V0id;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 
@@ -172,7 +174,8 @@ final class GivePayGatewayClient {
 	 * @return TransactionResult
 	 */
 	private function makeVoidRequest( $access_token, $transaction_id, $merchant_id, $terminal_id ) {
-		$void_request = $this->generateVoidRequest( $merchant_id, $terminal_id, $transaction_id );
+	    $void = new V0id(TerminalType::$ECommerce, $transaction_id);
+		$void_request = $void->serialize($merchant_id, $terminal_id);
 
 		$body = json_encode( $void_request );
 
@@ -300,28 +303,6 @@ final class GivePayGatewayClient {
 		$token = json_decode( $response->getContent() );
 
 		return $token->access_token;
-	}
-
-	/**
-	 * Generate a void request
-	 *
-	 * @param string $merchant_id
-	 * @param string $terminal_id
-	 * @param string $transaction_id
-	 *
-	 * @return array
-	 **/
-	private function generateVoidRequest( $merchant_id, $terminal_id, $transaction_id ) {
-		$refund_request = array(
-			'mid'            => $merchant_id,
-			'terminal'       => array(
-				'tid'           => $terminal_id,
-				'terminal_type' => 'com.givepay.terminal-types.ecommerce'
-			),
-			'transaction_id' => $transaction_id
-		);
-
-		return $refund_request;
 	}
 
 	/**
