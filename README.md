@@ -1,4 +1,4 @@
-# FlatRatePay PHP
+# GivePay Gateway PHP
 
 [![Build Status](https://travis-ci.org/GivePay/FlatRatePay-php.svg?branch=master)](https://travis-ci.org/GivePay/FlatRatePay-php)
 

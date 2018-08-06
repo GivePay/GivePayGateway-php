@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14ae19a8-3157-4bbf-be6d-d31f817b61f1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/FlatRatePay-php.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FlatRatePay-php.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/givepay/FlatRatePay/FlatRatePayClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/GivePay/Gateway/GivePayGatewayClient.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/givepay/FlatRatePay/TransactionResult.php" beforeDir="false" afterPath="$PROJECT_DIR$/GivePay/Gateway/TransactionResult.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/givepay/FlatRatePay/Transactions/Address.php" beforeDir="false" afterPath="$PROJECT_DIR$/GivePay/Gateway/Transactions/Address.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/givepay/FlatRatePay/Transactions/Card.php" beforeDir="false" afterPath="$PROJECT_DIR$/GivePay/Gateway/Transactions/Card.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/givepay/FlatRatePay/Transactions/Sale.php" beforeDir="false" afterPath="$PROJECT_DIR$/GivePay/Gateway/Transactions/Sale.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/givepay/FlatRatePay/Transactions/TerminalType.php" beforeDir="false" afterPath="$PROJECT_DIR$/GivePay/Gateway/Transactions/TerminalType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/AddressTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AddressTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/CardTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CardTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/SaleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/SaleTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,20 +35,20 @@
           <entry key="gitignore" value="3" />
           <entry key="json" value="3" />
           <entry key="lock" value="1" />
-          <entry key="md" value="1" />
+          <entry key="md" value="2" />
           <entry key="php" value="26" />
-          <entry key="xml" value="1" />
-          <entry key="yml" value="4" />
+          <entry key="xml" value="2" />
+          <entry key="yml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="4" />
-          <entry key="Markdown" value="1" />
+          <entry key="Markdown" value="2" />
           <entry key="PHP" value="26" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="XML" value="1" />
-          <entry key="YAML" value="4" />
+          <entry key="XML" value="2" />
+          <entry key="YAML" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -66,16 +56,16 @@
           <entry key="dummy" value="57" />
           <entry key="env" value="35" />
           <entry key="gitignore" value="64" />
-          <entry key="json" value="259" />
-          <entry key="md" value="139" />
+          <entry key="json" value="270" />
+          <entry key="md" value="154" />
           <entry key="php" value="6047" />
           <entry key="yml" value="211" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="259" />
-          <entry key="Markdown" value="139" />
+          <entry key="JSON" value="270" />
+          <entry key="Markdown" value="154" />
           <entry key="PHP" value="6047" />
           <entry key="PLAIN_TEXT" value="156" />
           <entry key="YAML" value="211" />
@@ -120,11 +110,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+            <state relative-caret-position="187">
+              <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -132,8 +131,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GivePay/Gateway/Transactions/Address.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+            <state relative-caret-position="-102">
+              <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+              <folding>
+                <element signature="e#6#93#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -148,30 +150,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GivePay/Gateway/Transactions/Sale.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GivePay/Gateway/Transactions/TerminalType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/AddressTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            <state relative-caret-position="213">
+              <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
               <folding>
                 <element signature="e#6#94#0#PHP" expanded="true" />
+                <element signature="e#96#128#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -228,9 +213,7 @@
         <option value="$PROJECT_DIR$/tests/sale_tests.php" />
         <option value="$PROJECT_DIR$/phpunit.xml" />
         <option value="$PROJECT_DIR$/.travis.yml" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/LICENSE" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/GivePay/Gateway/TransactionResult.php" />
         <option value="$PROJECT_DIR$/GivePay/Gateway/FlatRatePayClient.php" />
         <option value="$PROJECT_DIR$/GivePay/Gateway/GivePayGatewayClient.php" />
@@ -241,6 +224,8 @@
         <option value="$PROJECT_DIR$/tests/SaleTest.php" />
         <option value="$PROJECT_DIR$/tests/AddressTest.php" />
         <option value="$PROJECT_DIR$/tests/CardTest.php" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/composer.json" />
       </list>
     </option>
   </component>
@@ -376,9 +361,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.Run All Tests">
-    <configuration name="AddressTests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="AddressTests" file="$PROJECT_DIR$/tests/AddressTest.php" scope="Class" />
+  <component name="RunManager" selected="PHPUnit.AddressTest">
+    <configuration name="AddressTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="AddressTest" file="$PROJECT_DIR$/tests/AddressTest.php" scope="Class" />
       <method v="2" />
     </configuration>
     <configuration name="Run All Tests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -403,19 +388,19 @@
     </configuration>
     <list>
       <item itemvalue="PHPUnit.Run All Tests" />
-      <item itemvalue="PHPUnit.AddressTests" />
       <item itemvalue="PHPUnit.SaleTest.testSalesCreatesSaleInstance" />
       <item itemvalue="PHPUnit.SaleTest.testSaleSerializesProperly" />
       <item itemvalue="PHPUnit.SaleTest" />
       <item itemvalue="PHPUnit.SaleTest.testCanMakeSale" />
+      <item itemvalue="PHPUnit.AddressTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.AddressTest" />
         <item itemvalue="PHPUnit.SaleTest.testCanMakeSale" />
         <item itemvalue="PHPUnit.SaleTest.testSaleSerializesProperly" />
         <item itemvalue="PHPUnit.SaleTest" />
         <item itemvalue="PHPUnit.SaleTest.testSalesCreatesSaleInstance" />
-        <item itemvalue="PHPUnit.AddressTests" />
       </list>
     </recent_temporary>
   </component>
@@ -429,17 +414,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1533562656705</updated>
-      <workItem from="1533562658008" duration="13123000" />
+      <workItem from="1533562658008" duration="13720000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SaleTest_testCanMakeSale - 2018.08.06 at 10h 53m 58s.xml">
-      <configuration name="SaleTest.testCanMakeSale" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="SaleTest_testCanMakeSale - 2018.08.06 at 10h 54m 59s.xml">
-      <configuration name="SaleTest.testCanMakeSale" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="SaleTest_testCanMakeSale - 2018.08.06 at 10h 55m 01s.xml">
       <configuration name="SaleTest.testCanMakeSale" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
@@ -464,9 +443,15 @@
     <history-entry file="Run_All_Tests - 2018.08.06 at 13h 34m 13s.xml">
       <configuration name="Run All Tests" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="Run_All_Tests - 2018.08.06 at 13h 34m 30s.xml">
+      <configuration name="Run All Tests" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Run_All_Tests - 2018.08.06 at 13h 35m 16s.xml">
+      <configuration name="Run All Tests" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13123000" />
+    <option name="totallyTimeSpent" value="13720000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -572,41 +557,10 @@
         <state relative-caret-position="-26235" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/phpunit.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LICENSE">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1209">
           <caret line="164" column="8" selection-start-line="164" selection-start-column="8" selection-end-line="164" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="85">
-            <caret line="5" selection-start-line="5" selection-end-line="5" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -627,13 +581,6 @@
     <entry file="file://$PROJECT_DIR$/GivePay/Gateway/Transactions/Card.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GivePay/Gateway/Transactions/Address.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
           <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
         </state>
       </provider>
@@ -674,11 +621,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/AddressTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        <state relative-caret-position="213">
+          <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
           <folding>
             <element signature="e#6#94#0#PHP" expanded="true" />
+            <element signature="e#96#128#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpunit.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="85">
+            <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GivePay/Gateway/Transactions/Address.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding>
+            <element signature="e#6#93#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
         </state>
       </provider>
     </entry>
