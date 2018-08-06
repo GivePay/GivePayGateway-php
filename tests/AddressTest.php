@@ -7,7 +7,7 @@
  */
 
 use \PHPUnit\Framework\TestCase;
-use \givepay\FlatRatePay\Transactions\Address;
+use GivePay\Gateway\Transactions\Address;
 
 final class AddressTest extends TestCase {
 

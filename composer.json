@@ -1,8 +1,8 @@
 {
-  "name": "givepay/FlatRatePay",
+  "name": "givepay/givepay-gateway",
   "autoload": {
     "psr-4": {
-      "givepay\\FlatRatePay\\": "givepay/FlatRatePay/"
+      "GivePay\\Gateway\\": "Givepay/Gateway/"
     }
   },
   "require-dev": {

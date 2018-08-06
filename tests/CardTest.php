@@ -7,7 +7,7 @@
  */
 
 use \PHPUnit\Framework\TestCase;
-use \givepay\FlatRatePay\Transactions\Card;
+use GivePay\Gateway\Transactions\Card;
 
 final class CardTest extends TestCase {
     public function testCardCanBeCreatedWithCardInfo() {

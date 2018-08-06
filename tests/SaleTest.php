@@ -6,11 +6,11 @@
  * Time: 9:34 AM
  */
 
-use givepay\FlatRatePay\Transactions\Sale;
-use givepay\FlatRatePay\Transactions\Address;
-use givepay\FlatRatePay\Transactions\Card;
-use givepay\FlatRatePay\Transactions\TerminalType;
-use \givepay\FlatRatePay\FlatRatePayClient;
+use GivePay\Gateway\Transactions\Sale;
+use GivePay\Gateway\Transactions\Address;
+use GivePay\Gateway\Transactions\Card;
+use GivePay\Gateway\Transactions\TerminalType;
+use GivePay\Gateway\GivePayGatewayClient;
 
 final class SaleTest extends \PHPUnit\Framework\TestCase {
 
@@ -67,7 +67,7 @@ final class SaleTest extends \PHPUnit\Framework\TestCase {
             return;
         }
 
-        $client = new FlatRatePayClient($client_id, $client_secret, "https://portal.flatratepay-staging.net/connect/token", "https://gpg-stage.flatratepay-staging.net/");
+        $client = new GivePayGatewayClient($client_id, $client_secret, "https://portal.flatratepay-staging.net/connect/token", "https://gpg-stage.flatratepay-staging.net/");
         $sale = new Sale(10, TerminalType::$ECommerce,
             new Address("", "", "", "", "76132"
         ), "email@email.com", "phone",
