@@ -6,5 +6,9 @@
             <directory>./tests</directory>
         </testsuite>
     </testsuites>
-
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./GivePay/Gateway/</directory>
+        </whitelist>
+    </filter>
 </phpunit>

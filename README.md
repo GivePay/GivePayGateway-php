@@ -1,6 +1,8 @@
 # GivePay Gateway PHP
 
 [![Build Status](https://api.travis-ci.org/GivePay/GivePayGateway-php.svg?branch=master)](https://travis-ci.org/GivePay/GivePayGateway-php)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/GivePay/GivePayGateway-php/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/GivePay/GivePayGateway-php/?branch=master)[![Code Coverage](https://scrutinizer-ci.com/g/GivePay/GivePayGateway-php/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/GivePay/GivePayGateway-php/?branch=master)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/GivePay/GivePayGateway-php/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
 
 A library for interacting with FlatRatePay transactions APIs with the GivePay Gateway.
 
