@@ -306,32 +306,4 @@ final class GivePayGatewayClient {
 
 		return $token->access_token;
 	}
-
-	/**
-	 * Generates a tokenization request
-	 *
-	 * @param string $merchant_id
-	 * @param string $terminal_id
-	 * @param array $card
-	 *
-	 * @return array
-	 */
-	private function generateTokenizationRequest( $merchant_id, $terminal_id, $card ) {
-		$token_request = array(
-			'mid'      => $merchant_id,
-			'terminal' => array(
-				'tid'           => $terminal_id,
-				'terminal_type' => 'com.givepay.terminal-types.ecommerce'
-			),
-			'card'     => array(
-				'card_number'      => $card['card_number'],
-				'card_present'     => false,
-				'expiration_month' => $card['expiration_month'],
-				'expiration_year'  => $card['expiration_year'],
-				'cvv'              => $card['cvv']
-			)
-		);
-
-		return $token_request;
-	}
 }
