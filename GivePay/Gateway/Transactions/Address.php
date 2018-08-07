@@ -8,7 +8,8 @@
 
 namespace GivePay\Gateway\Transactions;
 
-final class Address {
+final class Address
+{
     /**
      * @var string Billing address line 1
      */
@@ -42,7 +43,8 @@ final class Address {
      * @param string $state
      * @param string $postal_code
      */
-    public function __construct($address_line_1, $address_line_2, $city, $state, $postal_code) {
+    public function __construct($address_line_1, $address_line_2, $city, $state, $postal_code)
+    {
         $this->address_line_1 = $address_line_1;
         $this->address_line_2 = $address_line_2;
         $this->city = $city;
@@ -53,12 +55,13 @@ final class Address {
     /**
      * @return array Serializes the Address into a address request object for GPG
      */
-    public function serialize() {
+    public function serialize()
+    {
         return array(
-            'line_1'      => $this->address_line_1,
-            'line_2'      => $this->address_line_2,
-            'city'        => $this->city,
-            'state'       => $this->state,
+            'line_1' => $this->address_line_1,
+            'line_2' => $this->address_line_2,
+            'city' => $this->city,
+            'state' => $this->state,
             'postal_code' => $this->postal_code
         );
     }

@@ -8,7 +8,8 @@
 
 namespace GivePay\Gateway\Transactions;
 
-final class Card {
+final class Card
+{
 
     /**
      * @var string The PAN for the card
@@ -49,7 +50,8 @@ final class Card {
      *
      * @return Card
      */
-    public static function withCard($pan, $cvv, $expiration_month, $expiration_year) {
+    public static function withCard($pan, $cvv, $expiration_month, $expiration_year)
+    {
         $card = new self();
         $card->pan = $pan;
         $card->cvv = $cvv;
@@ -64,7 +66,8 @@ final class Card {
      * @param string $token The payment card token
      * @return Card
      */
-    public static function withToken($token) {
+    public static function withToken($token)
+    {
         $card = new self();
         $card->token = $token;
         $card->is_token_card = true;
@@ -73,16 +76,10 @@ final class Card {
     }
 
     /**
-     * @return bool Whether or not this card is tokenized
-     */
-    private function isTokenCard() {
-        return $this->is_token_card;
-    }
-
-    /**
      * @return array Serializes the card into a GPG request param
      */
-    public function serialize() {
+    public function serialize()
+    {
         if ($this->isTokenCard()) {
             return array(
                 'token' => $this->token
@@ -90,11 +87,19 @@ final class Card {
         }
 
         return array(
-            'card_number'      => $this->pan,
-            'card_present'     => false,
+            'card_number' => $this->pan,
+            'card_present' => false,
             'expiration_month' => $this->expiration_month,
-            'expiration_year'  => $this->expiration_year,
-            'cvv'              => $this->cvv
+            'expiration_year' => $this->expiration_year,
+            'cvv' => $this->cvv
         );
+    }
+
+    /**
+     * @return bool Whether or not this card is tokenized
+     */
+    private function isTokenCard()
+    {
+        return $this->is_token_card;
     }
 }

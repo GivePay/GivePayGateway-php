@@ -6,25 +6,28 @@
  * Time: 10:15 AM
  */
 
-use \PHPUnit\Framework\TestCase;
-use \GivePay\Gateway\Transactions\Address;
+use GivePay\Gateway\Transactions\Address;
+use PHPUnit\Framework\TestCase;
 
-final class AddressTest extends TestCase {
+final class AddressTest extends TestCase
+{
 
-    public function testAddressCanBeCreated() {
+    public function testAddressCanBeCreated()
+    {
         $this->assertInstanceOf(
             Address::class,
             new Address("line1", "", "", "", "")
         );
     }
 
-    public function testAddressSerializesProperly() {
+    public function testAddressSerializesProperly()
+    {
         $this->assertSame(
             array(
-                "line_1"      => "line1",
-                "line_2"      => "line2",
-                "city"        => "city",
-                "state"       => "state",
+                "line_1" => "line1",
+                "line_2" => "line2",
+                "city" => "city",
+                "state" => "state",
                 "postal_code" => "postal"
             ),
             (new Address("line1", "line2", "city", "state", "postal"))->serialize()

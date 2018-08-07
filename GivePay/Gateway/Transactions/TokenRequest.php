@@ -8,7 +8,8 @@
 
 namespace GivePay\Gateway\Transactions;
 
-final class TokenRequest {
+final class TokenRequest
+{
     /**
      * @var Card card
      */
@@ -24,23 +25,10 @@ final class TokenRequest {
      * @param Card $card
      * @param string $terminal_type
      */
-    public function __construct($card, $terminal_type) {
+    public function __construct($card, $terminal_type)
+    {
         $this->card = $card;
         $this->terminal_type = $terminal_type;
-    }
-
-    /**
-     * @return \GivePay\Gateway\Transactions\Card
-     */
-    public function getCard() {
-        return $this->card;
-    }
-
-    /**
-     * @return string
-     */
-    public function getTerminalType() {
-        return $this->terminal_type;
     }
 
     /**
@@ -49,7 +37,8 @@ final class TokenRequest {
      * @param string $terminal_id
      * @return array
      */
-    public function serialize($merchant_id, $terminal_id) {
+    public function serialize($merchant_id, $terminal_id)
+    {
         return array(
             'mid' => $merchant_id,
             'terminal' => array(
@@ -58,5 +47,21 @@ final class TokenRequest {
             ),
             'card' => $this->getCard()->serialize()
         );
+    }
+
+    /**
+     * @return string
+     */
+    public function getTerminalType()
+    {
+        return $this->terminal_type;
+    }
+
+    /**
+     * @return \GivePay\Gateway\Transactions\Card
+     */
+    public function getCard()
+    {
+        return $this->card;
     }
 }

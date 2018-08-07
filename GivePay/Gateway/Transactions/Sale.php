@@ -8,7 +8,8 @@
 
 namespace GivePay\Gateway\Transactions;
 
-final class Sale {
+final class Sale
+{
     /**
      * @var int The total amount of the transactions
      */
@@ -59,35 +60,37 @@ final class Sale {
     }
 
     /**
-     * @return float The total amount for the sale in cents
-     */
-    public function getTotal() {
-        return floatval($this->total * 100);
-    }
-
-    /**
      * @param string $merchant_id
      * @param string $terminal_id
      * @return array
      */
-    public function serialize($merchant_id, $terminal_id) {
+    public function serialize($merchant_id, $terminal_id)
+    {
         $sale_request = array(
-            'mid'      => $merchant_id,
+            'mid' => $merchant_id,
             'terminal' => array(
-                'tid'           => $terminal_id,
+                'tid' => $terminal_id,
                 'terminal_type' => $this->terminal_type
-			),
-            'amount'   => array(
+            ),
+            'amount' => array(
                 'base_amount' => $this->getTotal()
             ),
-            'payer'    => array(
+            'payer' => array(
                 'billing_address' => $this->billing_address->serialize(),
-                'email_address'   => $this->email,
-                'phone_number'    => $this->phone
+                'email_address' => $this->email,
+                'phone_number' => $this->phone
             ),
             'card' => $this->card->serialize()
         );
 
         return $sale_request;
+    }
+
+    /**
+     * @return float The total amount for the sale in cents
+     */
+    public function getTotal()
+    {
+        return floatval($this->total * 100);
     }
 }

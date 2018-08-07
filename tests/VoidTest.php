@@ -6,20 +6,23 @@
  * Time: 3:24 PM
  */
 
-use \PHPUnit\Framework\TestCase;
-use \GivePay\Gateway\Transactions\V0id;
-use \GivePay\Gateway\Transactions\TerminalType;
-use \GivePay\Gateway\GivePayGatewayClient;
+use GivePay\Gateway\GivePayGatewayClient;
+use GivePay\Gateway\Transactions\TerminalType;
+use GivePay\Gateway\Transactions\V0id;
+use PHPUnit\Framework\TestCase;
 
-final class VoidTest extends TestCase {
-    public function testVoidCanBeCreated() {
+final class VoidTest extends TestCase
+{
+    public function testVoidCanBeCreated()
+    {
         $this->assertInstanceOf(
             V0id::class,
             new V0id("", "")
         );
     }
 
-    public function testVoidSerializesProperly() {
+    public function testVoidSerializesProperly()
+    {
         $this->assertSame(
             array(
                 'mid' => 'test mid',
@@ -36,7 +39,8 @@ final class VoidTest extends TestCase {
     /**
      * @dataProvider envVarCredsProvider
      */
-    public function testCanMakeVoid($mid, $tid, $client_id, $client_secret, $transaction_id) {
+    public function testCanMakeVoid($mid, $tid, $client_id, $client_secret, $transaction_id)
+    {
         if (null == $mid) {
             $this->markTestSkipped('no creds found. Skipping test...');
             return;
@@ -48,7 +52,8 @@ final class VoidTest extends TestCase {
         $this->assertSame(true, $result->getSuccess());
     }
 
-    public function envVarCredsProvider() {
+    public function envVarCredsProvider()
+    {
         return [
             'sale' => [getenv('MID'), getenv('TID'), getenv('CLIENT_ID'), getenv('CLIENT_SECRET'), getenv('TRANSACTION_ID')]
         ];

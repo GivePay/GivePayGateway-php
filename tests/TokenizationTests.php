@@ -6,21 +6,24 @@
  * Time: 3:39 PM
  */
 
-use \PHPUnit\Framework\TestCase;
-use \GivePay\Gateway\Transactions\Card;
-use \GivePay\Gateway\Transactions\TokenRequest;
-use \GivePay\Gateway\Transactions\TerminalType;
-use \GivePay\Gateway\GivePayGatewayClient;
+use GivePay\Gateway\GivePayGatewayClient;
+use GivePay\Gateway\Transactions\Card;
+use GivePay\Gateway\Transactions\TerminalType;
+use GivePay\Gateway\Transactions\TokenRequest;
+use PHPUnit\Framework\TestCase;
 
-final class TokenizationTests extends TestCase {
-    public function testTokenizationRequestCanBeCreated() {
+final class TokenizationTests extends TestCase
+{
+    public function testTokenizationRequestCanBeCreated()
+    {
         $this->assertInstanceOf(
             TokenRequest::class,
             new TokenRequest(null, "")
         );
     }
 
-    public function testTokenRequestSerializesProperly() {
+    public function testTokenRequestSerializesProperly()
+    {
         $this->assertSame(
             array(
                 'mid' => 'test mid',
@@ -29,11 +32,11 @@ final class TokenizationTests extends TestCase {
                     'terminal_type' => TerminalType::$ECommerce
                 ),
                 'card' => array(
-                    "card_number"      => "12345",
-                    "card_present"     => false,
+                    "card_number" => "12345",
+                    "card_present" => false,
                     "expiration_month" => "12",
-                    "expiration_year"  => "21",
-                    "cvv"              => "123"
+                    "expiration_year" => "21",
+                    "cvv" => "123"
                 )
             ),
             (new TokenRequest(
@@ -46,7 +49,8 @@ final class TokenizationTests extends TestCase {
     /**
      * @dataProvider envVarCredsProvider
      */
-    public function testCanMakeTokenRequest($mid, $tid, $client_id, $client_secret) {
+    public function testCanMakeTokenRequest($mid, $tid, $client_id, $client_secret)
+    {
         if (null == $mid) {
             $this->markTestSkipped('no creds found. Skipping test...');
             return;
@@ -62,7 +66,8 @@ final class TokenizationTests extends TestCase {
         $this->assertNotNull($result);
     }
 
-    public function envVarCredsProvider() {
+    public function envVarCredsProvider()
+    {
         return [
             'sale' => [getenv('MID'), getenv('TID'), getenv('CLIENT_ID'), getenv('CLIENT_SECRET')]
         ];

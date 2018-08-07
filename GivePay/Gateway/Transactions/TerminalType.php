@@ -8,7 +8,8 @@
 
 namespace GivePay\Gateway\Transactions;
 
-final class TerminalType {
+final class TerminalType
+{
     /**
      * @var string An ECommerce terminal
      */
