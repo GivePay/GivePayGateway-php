@@ -59,7 +59,7 @@
           <entry key="env" value="51" />
           <entry key="gitignore" value="64" />
           <entry key="json" value="289" />
-          <entry key="md" value="172" />
+          <entry key="md" value="2718" />
           <entry key="php" value="8512" />
           <entry key="yml" value="217" />
         </counts>
@@ -67,8 +67,8 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="289" />
-          <entry key="Markdown" value="172" />
-          <entry key="PHP" value="8512" />
+          <entry key="Markdown" value="2623" />
+          <entry key="PHP" value="8607" />
           <entry key="PLAIN_TEXT" value="172" />
           <entry key="YAML" value="217" />
         </counts>
@@ -122,8 +122,13 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="34">
-                <caret line="2" column="134" selection-start-line="2" selection-start-column="134" selection-end-line="2" selection-end-column="134" />
+              <first_editor relative-caret-position="756">
+                <caret line="199" column="62" selection-start-line="199" selection-start-column="62" selection-end-line="199" selection-end-column="62" />
+                <folding>
+                  <element signature="e#6#48#0" expanded="true" />
+                  <element signature="e#6#48#0" expanded="true" />
+                  <element signature="e#6#48#0" expanded="true" />
+                </folding>
               </first_editor>
               <second_editor />
             </state>
@@ -147,7 +152,7 @@
         <entry file="file://$PROJECT_DIR$/GivePay/Gateway/Transactions/Sale.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="16" selection-start-line="16" selection-end-line="20" />
+              <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -423,7 +428,7 @@
       <updated>1533562656705</updated>
       <workItem from="1533562658008" duration="17967000" />
       <workItem from="1533657607689" duration="7000" />
-      <workItem from="1533658533338" duration="40000" />
+      <workItem from="1533658533338" duration="1980000" />
     </task>
     <servers />
   </component>
@@ -460,7 +465,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18014000" />
+    <option name="totallyTimeSpent" value="19954000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -658,13 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GivePay/Gateway/Transactions/Sale.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="16" selection-start-line="16" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/AddressTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -693,11 +691,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/GivePay/Gateway/Transactions/Sale.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="50" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="34">
-            <caret line="2" column="134" selection-start-line="2" selection-start-column="134" selection-end-line="2" selection-end-column="134" />
+          <first_editor relative-caret-position="756">
+            <caret line="199" column="62" selection-start-line="199" selection-start-column="62" selection-end-line="199" selection-end-column="62" />
+            <folding>
+              <element signature="e#6#48#0" expanded="true" />
+              <element signature="e#6#48#0" expanded="true" />
+              <element signature="e#6#48#0" expanded="true" />
+            </folding>
           </first_editor>
           <second_editor />
         </state>
