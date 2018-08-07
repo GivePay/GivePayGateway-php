@@ -1,11 +1,5 @@
-build:
-  environment:
-    php: 7.2
-  nodes:
-    coverage:
-      tests:
-        override:
-        - command: ./vendor/bin/phpunit --coverage-clover coverage.xml
-          coverage:
-            file: ./coverage.xml
-            format: clover
+tools:
+  external_code_coverage: true
+  php_code_coverage:
+    enabled: true
+    test_command: ./vendor/bin/phpunit
