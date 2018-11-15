@@ -36,9 +36,9 @@ $terminal_id   = getenv("TERMINAL_ID");
 // Create the credit/debit card object
 $card = Card::withCard(
     "411111111111", // Test Visa PAN
+    "331", // CVV/CVV2
     "09", // Expiration month (MM)
-    "23", // Expiration year (YY)
-    "331" // CVV/CVV2
+    "23" // Expiration year (YY)
 );
 
 // Collect the payer's billing address 
@@ -157,9 +157,9 @@ $payer_address;
 // Create the credit/debit card object
 $card_to_store = Card::withCard(
     "411111111111", // Test Visa PAN
+    "331", // CVV/CVV2
     "09", // Expiration month (MM)
-    "23", // Expiration year (YY)
-    "331" // CVV/CVV2
+    "23" // Expiration year (YY)
 );
 
 // Store the card in the gateway and retrieve a payment token string
