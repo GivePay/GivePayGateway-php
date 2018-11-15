@@ -37,7 +37,7 @@ final class GivePayGatewayClient
         $client_id,
         $client_secret,
         $token_endpoint = 'https://portal.flatratepay.com/connect/token',
-        $gateway_url = 'https://gateway.givepaycommerce.com',
+        $gateway_url = 'https://gateway.givepaycommerce.com/',
         $logger = null
     )
     {
