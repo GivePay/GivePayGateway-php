@@ -87,10 +87,10 @@ final class Sale
     }
 
     /**
-     * @return float The total amount for the sale in cents
+     * @return int The total amount for the sale in cents
      */
     public function getTotal()
     {
-        return floatval($this->total * 100);
+        return intval($this->total * 100);
     }
 }
