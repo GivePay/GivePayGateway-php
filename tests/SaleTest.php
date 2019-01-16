@@ -36,7 +36,7 @@ final class SaleTest extends \PHPUnit\Framework\TestCase
                     'terminal_type' => 'com.givepay.terminal-types.ecommerce'
                 ),
                 'amount' => array(
-                    'base_amount' => 1000.0
+                    'base_amount' => 1000
                 ),
                 'payer' => array(
                     'billing_address' => array(
