@@ -91,6 +91,6 @@ final class Sale
      */
     public function getTotal()
     {
-        return intval($this->total * 100);
+        return intval( round( $this->total * 100 ) );
     }
 }
