@@ -48,4 +48,12 @@ final class CardTest extends TestCase
             Card::withToken("test token")->serialize()
         );
     }
+
+    public function testCardFromTokenSerializesProperlyWithCvv()
+    {
+        $this->assertContains(
+            "123",
+            Card::withToken("test token", "123")->serialize()
+        );
+    }
 }

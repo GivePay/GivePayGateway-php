@@ -64,12 +64,14 @@ final class Card
     /**
      * Creates a card from a payment token
      * @param string $token The payment card token
+     * @param string $cvv The optional cvc/cvv2 value for the card
      * @return Card
      */
-    public static function withToken($token)
+    public static function withToken($token, $cvv = null)
     {
         $card = new self();
         $card->token = $token;
+        $card->cvv = $cvv;
         $card->is_token_card = true;
 
         return $card;
@@ -82,7 +84,8 @@ final class Card
     {
         if ($this->isTokenCard()) {
             return array(
-                'token' => $this->token
+                'token' => $this->token,
+                'cvv' => $this->cvv
             );
         }
 
