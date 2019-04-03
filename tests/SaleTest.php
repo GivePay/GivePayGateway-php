@@ -9,6 +9,7 @@
 use GivePay\Gateway\GivePayGatewayClient;
 use GivePay\Gateway\Transactions\Address;
 use GivePay\Gateway\Transactions\Card;
+use GivePay\Gateway\Transactions\Order;
 use GivePay\Gateway\Transactions\Sale;
 use GivePay\Gateway\Transactions\TerminalType;
 
@@ -27,6 +28,7 @@ final class SaleTest extends \PHPUnit\Framework\TestCase
     {
         $card = Card::withCard("12345", "123", "12", "21");
         $address = new Address("line1", "line2", "city", "state", "postal");
+        $order = new Order("HI!");
 
         $this->assertSame(
             array(
@@ -55,9 +57,12 @@ final class SaleTest extends \PHPUnit\Framework\TestCase
                     "expiration_month" => "12",
                     "expiration_year" => "21",
                     "cvv" => "123"
-                )
+                ),
+                'order' => [
+                    'order_number' => "HI!"
+                ]
             ),
-            (new Sale(10, TerminalType::$ECommerce, $address, "test@email.com", "phone", $card))->serialize("testmid", "testtid")
+            (new Sale(10, TerminalType::$ECommerce, $address, "test@email.com", "phone", $card, $order))->serialize("testmid", "testtid")
         );
     }
 
@@ -75,7 +80,8 @@ final class SaleTest extends \PHPUnit\Framework\TestCase
         $sale = new Sale(10, TerminalType::$ECommerce,
             new Address("", "", "", "", "76132"
             ), "email@email.com", "phone",
-            Card::withCard("4111111111111111", "123", "12", "21")
+            Card::withCard("4111111111111111", "123", "12", "21"),
+            new Order("test order")
         );
         $result = $client->chargeAmount($mid, $tid, $sale);
 

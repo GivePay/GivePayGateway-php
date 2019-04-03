@@ -41,6 +41,11 @@ final class Sale
     private $card;
 
     /**
+     * @var Order The optional order information for the transaction
+     */
+    private $order;
+
+    /**
      * Sale constructor.
      * @param int $total
      * @param string $terminal_type
@@ -48,8 +53,9 @@ final class Sale
      * @param string $email
      * @param string $phone
      * @param Card $card
+     * @param Order $order Optional order information
      */
-    public function __construct($total, $terminal_type, $billing_address, $email, $phone, $card)
+    public function __construct($total, $terminal_type, $billing_address, $email, $phone, $card, $order = null)
     {
         $this->total = $total;
         $this->terminal_type = $terminal_type;
@@ -57,6 +63,7 @@ final class Sale
         $this->email = $email;
         $this->phone = $phone;
         $this->card = $card;
+        $this->order = $order;
     }
 
     /**
@@ -83,6 +90,10 @@ final class Sale
             'card' => $this->card->serialize()
         );
 
+        if (NULL != $this->order) {
+            $sale_request['order'] = $this->order->serialize();
+        }
+
         return $sale_request;
     }
 
@@ -91,6 +102,6 @@ final class Sale
      */
     public function getTotal()
     {
-        return intval( round( $this->total * 100 ) );
+        return intval(round($this->total * 100));
     }
 }
