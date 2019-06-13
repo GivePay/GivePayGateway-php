@@ -91,7 +91,8 @@ final class SaleTest extends \PHPUnit\Framework\TestCase
     public function envVarCredsProvider()
     {
         return [
-            'sale' => [getenv('MID'), getenv('TID'), getenv('CLIENT_ID'), getenv('CLIENT_SECRET')]
+            'jp' => [getenv('MID'), getenv('TID'), getenv('CLIENT_ID'), getenv('CLIENT_SECRET')],
+            'cc' => [getenv('MID'), getenv('CCTID'), getenv('CLIENT_ID'), getenv('CLIENT_SECRET')]
         ];
     }
 }

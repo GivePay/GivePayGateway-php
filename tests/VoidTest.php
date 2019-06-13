@@ -55,7 +55,8 @@ final class VoidTest extends TestCase
     public function envVarCredsProvider()
     {
         return [
-            'sale' => [getenv('MID'), getenv('TID'), getenv('CLIENT_ID'), getenv('CLIENT_SECRET'), getenv('TRANSACTION_ID')]
+            'jp' => [getenv('MID'), getenv('TID'), getenv('CLIENT_ID'), getenv('CLIENT_SECRET'), getenv('TRANSACTION_ID')],
+            'cc' => [getenv('MID'), getenv('CCTID'), getenv('CLIENT_ID'), getenv('CLIENT_SECRET'), getenv('TRANSACTION_ID')]
         ];
     }
 }

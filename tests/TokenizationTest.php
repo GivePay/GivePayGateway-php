@@ -12,7 +12,7 @@ use GivePay\Gateway\Transactions\TerminalType;
 use GivePay\Gateway\Transactions\TokenRequest;
 use PHPUnit\Framework\TestCase;
 
-final class TokenizationTests extends TestCase
+final class TokenizationTest extends TestCase
 {
     public function testTokenizationRequestCanBeCreated()
     {
@@ -69,7 +69,8 @@ final class TokenizationTests extends TestCase
     public function envVarCredsProvider()
     {
         return [
-            'sale' => [getenv('MID'), getenv('TID'), getenv('CLIENT_ID'), getenv('CLIENT_SECRET')]
+            'jp' => [getenv('MID'), getenv('TID'), getenv('CLIENT_ID'), getenv('CLIENT_SECRET')],
+            'cc' => [getenv('MID'), getenv('CCTID'), getenv('CLIENT_ID'), getenv('CLIENT_SECRET')]
         ];
     }
 }
