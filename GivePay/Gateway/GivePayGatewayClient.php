@@ -77,21 +77,31 @@ final class GivePayGatewayClient
     }
 
     /**
+     * Gets an API key, which can only be used for tokenization. Safe for use on client-side scripts.
+     *
+     * @return string the API key
+     */
+    public function getTokenizationApiKey() {
+        return $this->getAccessToken($this->client_id, $this->client_secret, $this->token_endpoint, 'tokenize:transactions');
+    }
+
+    /**
      * Gets an access token from the auth server
      *
      * @param string $client_id the client ID
      * @param string $client_secret the client secret
      * @param string $token_url the token endpoint
+     * @param string $scopes the scopes for the access token request
      *
      * @return string
      */
-    private function getAccessToken($client_id, $client_secret, $token_url)
+    private function getAccessToken($client_id, $client_secret, $token_url, $scopes = 'authorize:transactions capture:transactions sale:transactions refund:transactions void:transactions tokenize:transactions')
     {
         $token_data = array(
             'client_id' => $client_id,
             'grant_type' => 'client_credentials',
             'client_secret' => $client_secret,
-            'scope' => 'authorize:transactions capture:transactions sale:transactions refund:transactions void:transactions tokenize:transactions'
+            'scope' => $scopes,
         );
 
         $request = new Request($token_url);

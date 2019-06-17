@@ -66,6 +66,22 @@ final class TokenizationTest extends TestCase
         $this->assertNotNull($result);
     }
 
+    /**
+     * @dataProvider envVarCredsProvider
+     */
+    public function testCanGetTokenizationApiKey($mid, $tid, $client_id, $client_secret) {
+        if (null == $client_id) {
+            $this->markTestSkipped('no creds found. Skipping test...');
+            return;
+        }
+
+        $client = new GivePayGatewayClient($client_id, $client_secret, "https://portal.flatratepay-staging.net/connect/token", "https://gpg-stage.flatratepay-staging.net/");
+        $apiKey = $client->getTokenizationApiKey();
+
+        $this->assertNotEmpty($apiKey);
+    }
+
+
     public function envVarCredsProvider()
     {
         return [
